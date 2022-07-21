@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "Link Tracking Tag Remover",
+	"version": "0.1.0",
+	"description": "",
+	"homepage_url": "https://github.com/prplecake/link-tracking-tag-remover",
+	"applications": {
+		"gecko": {
+			"id": "link-tracking-tag-remover@prplecake.com",
+			"strict_min_version": "57.0"
+		}
+	},
+	"options_ui": {
+		"page": "options.html"
+	},
+	"permissions": [
+		"notifications",
+		"storage",
+		"tabs",
+		"webNavigation",
+		"webRequest",
+		"webRequestBlocking",
+		"*://*.twitter.com/*"
+	],
+	"background": {
+		"scripts": [
+			"js/background.js"
+		],
+		"persistent": true
+	}
+}

@@ -1,0 +1,3 @@
+web-ext-artifacts/*
+.vs/*
+node_modules/
